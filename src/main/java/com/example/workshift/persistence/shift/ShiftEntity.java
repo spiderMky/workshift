@@ -51,4 +51,41 @@ public class ShiftEntity {
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore
     private ShopEntity shop;
+
+
+    public Instant getActiveFrom() {
+        return activeFrom;
+    }
+
+    public void setActiveFrom(Instant activeFrom) {
+        this.activeFrom = activeFrom;
+    }
+
+    public Instant getActiveTo() {
+        return activeTo;
+    }
+
+    public void setActiveTo(Instant activeTo) {
+        this.activeTo = activeTo;
+    }
+
+    public UserEntity getUser() {
+        return user;
+    }
+
+    public void setUser(UserEntity user) {
+        this.user = user;
+    }
+
+    public ShopEntity getShop() {
+        return shop;
+    }
+
+    public void setShop(ShopEntity shop) {
+        this.shop = shop;
+    }
+
+    public Long getId() {
+        return id;
+    }
 }
