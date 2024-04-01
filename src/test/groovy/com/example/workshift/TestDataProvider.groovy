@@ -48,7 +48,7 @@ class TestDataProvider {
         public static Long USER_ID = 1L;
 
 
-        public static Shift createNewShift () {
+        static Shift createNewShift () {
                 CreateShiftRequest createShiftRequest = new CreateShiftRequest(NOW, NOW + Duration.ofHours(2), USER_ID, SHOP_ID);
                 return Shift.of(createShiftRequest);
         }
